@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    box-sizing: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(142,61,61);
+    background: linear-gradient(0deg, rgba(142,61,61,1) 0%, rgba(45,253,184,1) 100%);
+}
+
+.container_1 {
+    min-height: 86.65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.195);
+}
+
+.title {
+    color: black;
+    font-size: 45px;
+    padding: 20px;
+    background-color: rgba(243, 243, 243, 0.897);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.div_container {
+    padding: 45px 60px;
+    background-color: rgba(255, 255, 255, 0.138);
+    border-radius: 30px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 40px;
+    padding: 0px 30px 0px 30px;
+}
+
+li{
+    background-color: rgba(243, 243, 243, 0.897);
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.a1{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.a2{
+    padding: 20px 45px 0px 45px;
+}
+
+a:hover{
+    background: rgb(148, 255, 244);
+    border-radius: 20px;    
+}
+
+@media (max-width: 760px){
+    .a1{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 650px){
+
+    html{
+        width: 100%!important;
+        overflow-x: hidden!important;
+    }
+
+    body {
+        background: rgb(142,61,61);
+        background: linear-gradient(0deg, rgba(142,61,61,1) 0%, rgba(45,253,184,1) 100%);
+        width: 100%!important;
+        overflow-x: hidden!important;
+    }
+
+    main{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .container_1{
+        width: 100%;
+        height: auto;
+    }
+
+    .title{
+        font-size: 25px;
+        padding: 20px 0;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .a2{
+        padding: 20px 45px 20px 45px;
+    }
+}
